@@ -1,0 +1,19 @@
+/*
+	Profile Page Project 2022
+    (c) izenderi
+    https://izenderi.github.io/
+	Ziliang Zhang - https://github.com/izenderi/
+*/
+
+/* Header */
+
+body.is-preload #header.alt > * {
+    opacity: 1;
+}
+
+body.is-preload #header.alt .logo {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}

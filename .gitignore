@@ -1,0 +1,4 @@
+# izenderi.github.io ignore files
+.DS.store
+.idea
+assests/js/.DS_Store
