@@ -101,10 +101,6 @@ html {
 
 body {
     background-color: #424141;
-    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #6e6e6e 15%, #343434 85%);
-    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #6e6e6e 15%, #343434 85%);
-    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #6e6e6e 15%, #343434 85%);
-    background-image: url("images/overlay.png"), linear-gradient(45deg, #6e6e6e 15%, #343434 85%);
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2625,20 +2621,20 @@ ul.actions.fit.stacked {
 
 /* Icons */
 
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
+/*ul.icons {*/
+/*    cursor: default;*/
+/*    list-style: none;*/
+/*    padding-left: 0;*/
+/*}*/
 
-ul.icons li {
-    display: inline-block;
-    padding: 0 0.65em 0 0;
-}
+/*ul.icons li {*/
+/*    display: inline-block;*/
+/*    padding: 0 0.65em 0 0;*/
+/*}*/
 
-ul.icons li:last-child {
-    padding-right: 0 !important;
-}
+/*ul.icons li:last-child {*/
+/*    padding-right: 0 !important;*/
+/*}*/
 
 /* Section/Article */
 
@@ -2706,7 +2702,7 @@ footer.major {
     }
 
     footer.major {
-        margin-top: 0;
+        margin-top: 1em;
     }
 
 }
@@ -2717,94 +2713,165 @@ header.major h2:after {
 
 /* Table */
 
-.table-wrapper {
-    -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-}
+/*.table-wrapper {*/
+/*    -webkit-overflow-scrolling: touch;*/
+/*    overflow-x: auto;*/
+/*}*/
 
-table {
-    margin: 0 0 2em 0;
-    width: 100%;
-}
+/*table {*/
+/*    margin: 0 0 2em 0;*/
+/*    width: 100%;*/
+/*}*/
 
-table tbody tr {
-    border: solid 1px;
-    border-left: 0;
-    border-right: 0;
-}
+/*table tbody tr {*/
+/*    border: solid 1px;*/
+/*    border-left: 0;*/
+/*    border-right: 0;*/
+/*}*/
 
-table td {
-    padding: 0.75em 0.75em;
-}
+/*table td {*/
+/*    padding: 0.75em 0.75em;*/
+/*}*/
 
-table th {
-    font-size: 0.9em;
-    font-weight: 400;
-    padding: 0 0.75em 0.75em 0.75em;
-    text-align: left;
-}
+/*table th {*/
+/*    font-size: 0.9em;*/
+/*    font-weight: 400;*/
+/*    padding: 0 0.75em 0.75em 0.75em;*/
+/*    text-align: left;*/
+/*}*/
 
-table thead {
-    border-bottom: solid 2px;
-}
+/*table thead {*/
+/*    border-bottom: solid 2px;*/
+/*}*/
 
-table tfoot {
-    border-top: solid 2px;
-}
+/*table tfoot {*/
+/*    border-top: solid 2px;*/
+/*}*/
 
-table.alt {
-    border-collapse: separate;
-}
+/*table.alt {*/
+/*    border-collapse: separate;*/
+/*}*/
 
-table.alt tbody tr td {
-    border: solid 1px;
-    border-left-width: 0;
-    border-top-width: 0;
-}
+/*table.alt tbody tr td {*/
+/*    border: solid 1px;*/
+/*    border-left-width: 0;*/
+/*    border-top-width: 0;*/
+/*}*/
 
-table.alt tbody tr td:first-child {
-    border-left-width: 1px;
-}
+/*table.alt tbody tr td:first-child {*/
+/*    border-left-width: 1px;*/
+/*}*/
 
-table.alt tbody tr:first-child td {
-    border-top-width: 1px;
-}
+/*table.alt tbody tr:first-child td {*/
+/*    border-top-width: 1px;*/
+/*}*/
 
-table.alt thead {
-    border-bottom: 0;
-}
+/*table.alt thead {*/
+/*    border-bottom: 0;*/
+/*}*/
 
-table.alt tfoot {
-    border-top: 0;
-}
+/*table.alt tfoot {*/
+/*    border-top: 0;*/
+/*}*/
 
-table tbody tr {
-    border-color: rgba(255, 255, 255, 0.35);
-}
+/*table tbody tr {*/
+/*    border-color: rgba(255, 255, 255, 0.35);*/
+/*}*/
 
-table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(255, 255, 255, 0.075);
-}
+/*table tbody tr:nth-child(2n + 1) {*/
+/*    background-color: rgba(255, 255, 255, 0.075);*/
+/*}*/
 
-table th {
-    color: #ffffff;
-}
+/*table th {*/
+/*    color: #ffffff;*/
+/*}*/
 
-table thead {
-    border-bottom-color: rgba(255, 255, 255, 0.35);
-}
+/*table thead {*/
+/*    border-bottom-color: rgba(255, 255, 255, 0.35);*/
+/*}*/
 
-table tfoot {
-    border-top-color: rgba(255, 255, 255, 0.35);
-}
+/*table tfoot {*/
+/*    border-top-color: rgba(255, 255, 255, 0.35);*/
+/*}*/
 
-table.alt tbody tr td {
-    border-color: rgba(255, 255, 255, 0.35);
-}
+/*table.alt tbody tr td {*/
+/*    border-color: rgba(255, 255, 255, 0.35);*/
+/*}*/
 
 /* Features */
 
-.features {
+/*.features {*/
+/*    display: -moz-flex;*/
+/*    display: -webkit-flex;*/
+/*    display: -ms-flex;*/
+/*    display: flex;*/
+/*    -moz-flex-wrap: wrap;*/
+/*    -webkit-flex-wrap: wrap;*/
+/*    -ms-flex-wrap: wrap;*/
+/*    flex-wrap: wrap;*/
+/*    -moz-justify-content: center;*/
+/*    -webkit-justify-content: center;*/
+/*    -ms-justify-content: center;*/
+/*    justify-content: center;*/
+/*    width: calc(100% + 2em);*/
+/*    margin: 0 0 3em -2em;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*}*/
+
+/*.features li {*/
+/*    width: calc(33.33333% - 2em);*/
+/*    margin-left: 2em;*/
+/*    margin-top: 3em;*/
+/*    padding: 0;*/
+/*}*/
+
+/*!*.features li :hover{*!*/
+/*!*	transform: scale(1.2);*!*/
+/*!*}*!*/
+
+/*.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {*/
+/*    margin-top: 0;*/
+/*}*/
+
+/*.features li > :last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*@media screen and (max-width: 980px) {*/
+
+/*    .features li {*/
+/*        width: calc(50% - 2em);*/
+/*    }*/
+
+/*    .features li:nth-child(3) {*/
+/*        margin-top: 3em;*/
+/*    }*/
+
+/*}*/
+
+/*@media screen and (max-width: 736px) {*/
+
+/*    .features {*/
+/*        width: 100%;*/
+/*        margin: 0 0 2em 0;*/
+/*    }*/
+
+/*    .features li {*/
+/*        width: 100%;*/
+/*        margin-left: 0;*/
+/*        margin-top: 2em;*/
+/*    }*/
+
+/*    .features li:nth-child(2), .features li:nth-child(3) {*/
+/*        margin-top: 2em;*/
+/*    }*/
+
+/*}*/
+
+/* Tiles */
+
+.tiles {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -2813,62 +2880,244 @@ table.alt tbody tr td {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    postiion: relative;
+    margin: -2.5em 0 0 -2.5em;
+}
+
+.tiles article {
+    -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    width: calc(33.33333% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+}
+
+.tiles article > .image {
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tiles article > .image img {
+    display: block;
+    width: 100%;
+}
+
+.tiles article > .image:before {
+    pointer-events: none;
+    -moz-transition: background-color 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
+    -ms-transition: background-color 0.5s ease, opacity 0.5s ease;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.tiles article > .image:after {
+    pointer-events: none;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.25;
+    z-index: 2;
+}
+
+.tiles article > a {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
     -moz-justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    width: calc(100% + 2em);
-    margin: 0 0 3em -2em;
-    padding: 0;
-    list-style: none;
+    -moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+    -webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+    -ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: 4px;
+    border-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 3;
 }
 
-.features li {
-    width: calc(33.33333% - 2em);
-    margin-left: 2em;
-    margin-top: 3em;
-    padding: 0;
+.tiles article > a > :last-child {
+    margin: 0;
 }
 
-/*.features li :hover{*/
-/*	transform: scale(1.2);*/
-/*}*/
-
-.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
-    margin-top: 0;
+.tiles article > a:hover {
+    color: #ffffff !important;
 }
 
-.features li > :last-child {
+.tiles article > a h2 {
+    margin: 0;
+}
+
+.tiles article > a .content {
+    -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+    -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    opacity: 0;
+}
+
+.tiles article > a .content > :last-child {
     margin-bottom: 0;
+}
+
+.tiles article.style1 > .image:before {
+    background-color: #d3d3d3;
+}
+
+.tiles article.style2 > .image:before {
+    background-color: #888888;
+}
+
+.tiles article.style3 > .image:before {
+    background-color: #0a0a0a;
+}
+
+body:not(.is-touch) .tiles article:hover > .image {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+body:not(.is-touch) .tiles article:hover > .image:before {
+    background-color: #333333;
+    opacity: 0.35;
+}
+
+body:not(.is-touch) .tiles article:hover > .image:after {
+    opacity: 0;
+}
+
+body:not(.is-touch) .tiles article:hover .content {
+    max-height: 15em;
+    opacity: 1;
+}
+
+* + .tiles {
+    margin-top: 2em;
+}
+
+body.is-preload .tiles article {
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+body.is-touch .tiles article .content {
+    max-height: 15em;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .tiles {
+        margin: -1.25em 0 0 -1.25em;
+    }
+
+    .tiles article {
+        width: calc(33% - 1.25em);
+        margin: 1.25em 0 0 1.25em;
+    }
+
 }
 
 @media screen and (max-width: 980px) {
 
-    .features li {
-        width: calc(50% - 2em);
+    .tiles {
+        margin: -2.5em 0 0 -2.5em;
     }
 
-    .features li:nth-child(3) {
-        margin-top: 3em;
+    .tiles article {
+        width: calc(50% - 2.5em);
+        margin: 2.5em 0 0 2.5em;
     }
 
 }
 
 @media screen and (max-width: 736px) {
 
-    .features {
-        width: 100%;
-        margin: 0 0 2em 0;
+    .tiles {
+        margin: -1.25em 0 0 -1.25em;
     }
 
-    .features li {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 2em;
+    .tiles article {
+        width: calc(50% - 1.25em);
+        margin: 1.25em 0 0 1.25em;
     }
 
-    .features li:nth-child(2), .features li:nth-child(3) {
-        margin-top: 2em;
+    .tiles article:hover > .image {
+        -moz-transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .tiles {
+        margin: 0;
+    }
+
+    .tiles article {
+        width: 100%;
+        margin: 1.25em 0 0 0;
     }
 
 }
@@ -2910,11 +3159,11 @@ table.alt tbody tr td {
 }
 
 .statistics li.style4 {
-    background-color: #7a7a7a;
+    background-color: #333333;
 }
 
 .statistics li.style5 {
-    background-color: #1e1e1e;
+    background-color: #000000;
 }
 
 .statistics li strong, .statistics li b {
