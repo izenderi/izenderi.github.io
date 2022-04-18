@@ -11,7 +11,7 @@
 var executed = false;
 
 Number.prototype.format = function(n) {
-    var r = new RegExp('\\d(?=(\\d{3})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
+    var r = new RegExp('\\d(?=(\\d{4})+' + (n > 0 ? '\\.' : '$') + ')', 'g');
     return this.toFixed(Math.max(0, Math.floor(n))).replace(r, '$&,');
 };
 
@@ -29,7 +29,7 @@ $.fn.isInViewport = function() {
  * Viewable on screen checker
  */
 $(window).on('resize scroll', function() {
-    if ($('#second').isInViewport()) {
+    if ($('.statistics').isInViewport()) {
         increase();
     } else {
         // do something else
