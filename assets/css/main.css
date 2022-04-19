@@ -3823,6 +3823,7 @@ body.is-preload #header.alt .logo {
 
 #main ul.alt li {
     border-top-color: #dddddd;
+    text-align: left;
 }
 
 #main dl dt {
