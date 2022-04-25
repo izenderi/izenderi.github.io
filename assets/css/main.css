@@ -2643,7 +2643,7 @@ section.special, article.special {
 }
 
 header.major {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 header.major h2 {
@@ -2680,7 +2680,7 @@ header.major.special h2:after {
 }
 
 footer.major {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 @media screen and (max-width: 736px) {
