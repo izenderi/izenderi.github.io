@@ -19,8 +19,7 @@
   },
   "homepage": "https://github.com/izenderi/izenderi.github.io#readme",
   "dependencies": {
-    "express": "*",
-    "express-handlebars": "*",
-    "html": "*"
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
   }
 }
