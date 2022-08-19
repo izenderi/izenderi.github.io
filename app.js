@@ -3,11 +3,13 @@ const path = require('path')
 const app = express()
   
 // View Engine Setup
-app.set('views', path.join(__dirname, './'))
+app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 // Try to link up static css to html
-app.use(express.static(path.join(__dirname, 'assets')))
+app.use('/assets', express.static(path.join(__dirname, 'assets')))
+app.use('/images', express.static(path.join(__dirname, 'images')))
+app.use('/pdfs', express.static(path.join(__dirname, 'pdfs')))
 // app.use('/css', express.static(path.join(__dirname, 'assets/css')))
   
 app.get('/', function(req, res){
