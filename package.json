@@ -1,0 +1,26 @@
+{
+  "name": "izenderi.github.io",
+  "version": "0.3.0",
+  "description": "Personal Website",
+  "main": "app.js",
+  "author": "Ziliang",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izenderi/izenderi.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/izenderi/izenderi.github.io/issues"
+  },
+  "homepage": "https://github.com/izenderi/izenderi.github.io#readme",
+  "dependencies": {
+    "express": "*",
+    "express-handlebars": "*",
+    "html": "*"
+  }
+}
