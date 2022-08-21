@@ -5,6 +5,7 @@ const app = express()
 // View Engine Setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
+app.set('port', process.env.PORT || 3000);
 
 // Try to link up static css to html
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
@@ -18,7 +19,7 @@ app.get('/', function(req, res){
     res.render('index')
 })
   
-app.listen(8080, function(error){
+app.listen(app.get('port'), function(error){
     if(error) throw error
-    console.log("Server created Successfully. Listening on 8080")
+    console.log("Server created Successfully. Listening on "+app.get('port'))
 })
