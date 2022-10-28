@@ -3370,6 +3370,7 @@ body.is-touch .tiles article .content {
 #header p {
     font-size: 1.25em;
     letter-spacing: -0.025em;
+    color: #dad8d8;
 }
 
 #header.alt {
@@ -3378,6 +3379,7 @@ body.is-touch .tiles article .content {
 
 #header.alt h1 {
     font-size: 3.25em;
+    font-family: ui-sans-serif;
 }
 
 #header.alt > * {
