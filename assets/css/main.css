@@ -100,7 +100,18 @@ html {
 }
 
 body {
-    background-color: #424141;
+    background: url(/images/angryimg.png), url(/images/geisel.jpg);
+    background-position: top, bottom;
+    background-size: contain,auto;
+    background-repeat: no-repeat, no-repeat;
+
+    /* background: url("/images/geisel.jpg");
+    background-position: bottom; 
+    background-repeat: no-repeat; */
+
+    
+    
+    background-color: #dad8d8;
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,10 +127,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 /* Type */
 
-body {
+/* body {
     background-color: #424141;
     color: rgba(255, 255, 255, 0.65);
-}
+} */
 
 body, input, select, textarea {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -3359,6 +3370,7 @@ body.is-touch .tiles article .content {
 #header p {
     font-size: 1.25em;
     letter-spacing: -0.025em;
+    color: #dad8d8;
 }
 
 #header.alt {
@@ -3367,6 +3379,7 @@ body.is-touch .tiles article .content {
 
 #header.alt h1 {
     font-size: 3.25em;
+    font-family: ui-sans-serif;
 }
 
 #header.alt > * {
@@ -4017,7 +4030,7 @@ body.is-preload #header.alt .logo {
     }
 
     #footer .copyright {
-        text-align: left;
+        text-align: center;
     }
 
 }
