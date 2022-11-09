@@ -18,6 +18,12 @@ app.get('/', function(req, res){
     // and passing title variable through it
     res.render('index')
 })
+
+app.get('/experiences', function(req, res){
+    // Rendering our web page i.e. Demo.ejs
+    // and passing title variable through it
+    res.render('experiences')
+})
   
 app.listen(app.get('port'), function(error){
     if(error) throw error
