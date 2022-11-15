@@ -4092,6 +4092,9 @@ body.is-preload #header.alt .logo {
 
 }
 
+.r-button:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
 
 .r-button{
     --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
@@ -4114,6 +4117,8 @@ body.is-preload #header.alt .logo {
   
     font-family: var(--uirButtonFontFamily);
     font-size: var(--uirButtonFontSize);
+
+    box-shadow: none;
   }
   
   .r-button::-moz-focus-inner,
@@ -4369,7 +4374,7 @@ body.is-preload #header.alt .logo {
   
   :root{
     --colorWhite: #fff;
-    --colorMain: #4557bb;
+    --colorMain: #403f3f;
     --menuCircleBackgroundColor: var(--colorMain);
     --menuHamburgerBackgroundColor: var(--colorWhite);
     --menuHaburgerOutlineColor: var(--colorMain);

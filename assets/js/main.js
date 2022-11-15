@@ -146,7 +146,9 @@
       rootClass: 'menu',
       activeClass: 'menu_activated',
       toggleClass: 'menu__toggle',
-      toggleHintClass: 'menu__toggle-hint'
+      toggleHintClass: 'menu__toggle-hint',
+      menuNav:'menu__nav',
+      menuGroup:'menu__group'
     }
     
     const jsMenuNode = document.querySelector(`.${menuClassesNames.rootClass}`);
@@ -173,4 +175,6 @@
     }
     
     jsMenuNode.querySelector(`.${menuClassesNames.toggleClass}`).addEventListener('click', toggleMenu);
+
+    jsMenuNode.querySelector(`.${menuClassesNames.menuNav}`).addEventListener('click', toggleMenu);
   })(jQuery);
