@@ -3883,7 +3883,7 @@ body.is-preload #header.alt .logo {
 #profile_pic_web {display:block;}
 #profile_pic_mob {display:none}
 
-@media all and (max-width: 499px) {
+@media all and (max-width: 980px) {
     #profile_pic_web {display: none;}
     #profile_pic_mob {display: block;}
 }
