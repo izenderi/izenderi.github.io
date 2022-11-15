@@ -3866,6 +3866,15 @@ body.is-preload #header.alt .logo {
     border-color: #dddddd;
 }
 
+/* profile_img mobile and web */
+#profile_pic_web {display:block;}
+#profile_pic_mob {display:none}
+
+@media all and (max-width: 499px) {
+    #profile_pic_web {display: none;}
+    #profile_pic_mob {display: block;}
+}
+
 #main > .main {
     padding: 5em 5em 3em 5em ;
     border-top: solid 1px #dddddd;
