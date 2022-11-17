@@ -4422,6 +4422,6 @@ body.is-preload #header.alt .logo {
     }
   }
   
-  @media all and (min-width: 736px) {
+  @media all and (min-width: 737px) {
     .menu__toggle {display:none;}
   }
