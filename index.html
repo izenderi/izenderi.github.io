@@ -40,6 +40,33 @@
         </ul>
     </nav>
 
+    <!-- Nav_Mob -->
+    <div class="menu">
+        <nav class="menu__nav">
+          <ul class="menu__list r-list">
+            <li class="menu__group">
+              <a href="#intro" class="menu__link r-link">About me</a>
+            </li>
+            <li class="menu__group">
+              <a href="#experiences" class="menu__link r-link">Experiences</a>
+            </li>
+            <li class="menu__group">
+              <a href="#stats" class="menu__link r-link">Statistics</a>
+            </li>
+            <li class="menu__group">
+              <a href="#publications" class="menu__link r-link">Publications</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu__toggle r-button" type="button">
+          <span class="menu__hamburger m-hamburger">
+            <span class="m-hamburger__label">
+              <span class="menu__toggle-hint screen-reader">Open menu</span>
+            </span>
+          </span>
+        </button>
+    </div>
+
     <!-- Main -->
     <div id="main">
 
@@ -70,15 +97,18 @@
                     </p>
                     <span class="intro_button">
                         <ul id="cv_button" class="actions">
-                            <li><a href="pdfs/CV_Ziliang_Zhang.pdf" class="button">CV</a></li>
+                            <li><a href="pdfs/CV_ZiliangJohnson_Zhang _PhD.pdf" class="button">CV</a></li>
                         </ul>
                         <ul class="actions">
-                            <li><a href="pdfs/Resume_Ziliang_Work_2022.pdf" class="button">Resume</a></li>
+                            <li><a href="pdfs/Resume_Ziliang_SOC_intern.pdf" class="button">Resume</a></li>
                         </ul>
                     </span>
                 </div>
 
-                <span class="image"><img src="images/profile_pic.jpeg" alt="" /></span>
+                <span class="image">
+                    <img id="profile_pic_web" src="images/profile_pic.jpeg" alt="" />
+                    <img id="profile_pic_mob" src="images/profile_pic_mobile.jpeg" alt="" />
+                </span>
             </div>
         </section>
 
@@ -92,6 +122,19 @@
             <section class="tiles">
                 <article class="style1">
                     <span class="image">
+                        <img src="images/rten_logo.png" alt="" />
+                    </span>
+                    <a href="https://intra.ece.ucr.edu/~hyoseung/?arg=vita">
+                        <h2>ECE PhD</h2>
+                        <div class="content">
+                            <p>Pursuing Ph.D. Electrical Computer Engineering in UC Riverside
+                                Staring Sep 2022
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style2">
+                    <span class="image">
                         <img src="images/OpenRPT.jpeg" alt="" />
                     </span>
                     <a href="pdfs/Final_OpenRPT.pdf">
@@ -102,7 +145,7 @@
                         </div>
                     </a>
                 </article>
-                <article class="style2">
+                <article class="style3">
                     <span class="image">
                         <img src="images/verizon.png" alt="" />
                     </span>
@@ -115,7 +158,7 @@
                         </div>
                     </a>
                 </article>
-                <article class="style3">
+                <article class="style4">
                     <span class="image">
                         <img src="images/HDmap.png" alt="" />
                     </span>
@@ -125,6 +168,31 @@
                             <p>SSTD'21 research venue submission. Honorable Project recognized by Dr. Amr Magdy.
                                 Analyze different approaches in HD Maps
                                 construction and how they have been applied to the industry.
+                            </p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style5">
+                    <span class="image">
+                        <img src="images/when2buy.jpeg" alt="" />
+                    </span>
+                    <a href="https://a10-when2buy.herokuapp.com/">
+                        <h2>When2Buy</h2>
+                        <div class="content">
+                            <p>WebApp that can create a sharable shopping list and can be filled out by all participants. It will
+                                also add periodic items to the list to reduce cognitive load of all participants</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="style6">
+                    <span class="image">
+                        <img src="images/qgis.png" alt="" />
+                    </span>
+                    <a href="https://youtu.be/xz7gsHprunw">
+                        <h2>QGIS</h2>
+                        <div class="content">
+                            <p>Hands on Experience with QGIS.
+                                Demo app with survey on the geological computing / Spatial Computing.
                             </p>
                         </div>
                     </a>
