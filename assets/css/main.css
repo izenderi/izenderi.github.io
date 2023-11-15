@@ -4446,4 +4446,24 @@ body.is-preload #header.alt .logo {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
+
+section#intro.main{
+    /* padding-top: 1em; */
+    padding-bottom: 1em;
+}
+
+section#experiences.main.special{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+section#publications.main.special{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+section#stats.main.special{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
