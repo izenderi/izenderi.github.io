@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Profile Page Project 2022
+	Profile Page Project 2023
     (c) izenderi
     https://izenderi.github.io/
 	Ziliang Zhang - https://github.com/izenderi/
@@ -11,6 +11,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css'>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -25,7 +28,7 @@
 
 
         <h1>Ziliang Zhang</h1>
-        <p>Ph.D. Electrical and Computer Engineering, UC Riverside<br />
+        <p> Ph.D. Student Electrical and Computer Engineering, UC Riverside<br />
             M.S. Computer Engineering, UC Riverside<br />
             B.S. Cognitive Science - Human Computer Interaction, UC San Diego</p>
     </header>
@@ -34,11 +37,42 @@
     <nav id="nav">
         <ul>
             <li><a href="#intro" class="active">Introduction</a></li>
-            <li><a href="#first">Projects</a></li>
-            <li><a href="#second">Second Section</a></li>
-            <li><a href="#cta">Get Started</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#working">Working</a></li>
+            <li><a href="#stats">Stats</a></li>
         </ul>
     </nav>
+
+    <!-- Nav_Mob -->
+    <div class="menu">
+        <nav class="menu__nav">
+          <ul class="menu__list r-list">
+            <li class="menu__group">
+              <a href="#intro" class="menu__link r-link">About me</a>
+            </li>
+            <li class="menu__group">
+              <a href="#news" class="menu__link r-link">News</a>
+            </li>
+            <li class="menu__group">
+              <a href="#research" class="menu__link r-link">Research</a>
+            </li>
+            <li class="menu__group">
+                <a href="#working" class="menu__link r-link">Working Experience</a>
+              </li>
+            <li class="menu__group">
+                <a href="#stats" class="menu__link r-link">Statistics</a>
+              </li>
+          </ul>
+        </nav>
+        <button class="menu__toggle r-button" type="button">
+          <span class="menu__hamburger m-hamburger">
+            <span class="m-hamburger__label">
+              <span class="menu__toggle-hint screen-reader">Open menu</span>
+            </span>
+          </span>
+        </button>
+    </div>
 
     <!-- Main -->
     <div id="main">
@@ -52,148 +86,334 @@
                     </header>
                     <p>I am currently pursuing Ph.D. Electrical and Computer Engineering
                         in University of California Riverside, advised by
-                        <a href="https://intra.ece.ucr.edu/~hyoseung/">Dr. Hyoseung Kim</a>. I have
-                        received my M.S. Computer Engineering in University of California
+                        <a href="https://intra.ece.ucr.edu/~hyoseung/">Dr. Hyoseung Kim</a> and <a href="https://intra.ece.ucr.edu/~cong/">Dr. Cong Liu</a>. I have
+                        received M.S. Computer Engineering in University of California
                         Riverside, advised by
-                        <a href="https://intra.engr.ucr.edu/~htseng/">Dr. Hung-Wei Tseng</a>. I have
-                        received my B.S. Cognitive Science with Specialization of
+                        <a href="https://intra.engr.ucr.edu/~htseng/">Dr. Hung-Wei Tseng</a>, and B.S. Cognitive Science with Specialization of
                         Human-Computer Interaction in University of California San Diego. I have
                         also worked as a senior full-stack software developing engineer in
                         Verizon&trade; GNT group.
                     </p>
-                    <p>My research interest focuses on Embedded System,
-                        Cyber-physical System and IoTs to provide adequate computational power.
-                        My long-term research goal is to push forward to humane technology that
-                        encompasses accessibility/inclusion as its innate property. You can check
-                        my latest public projects on my
-                        <a href="https://github.com/IZenderI">github</a> page.
+                    <p style="margin-bottom: 0;">Current research interests are:
+                        <p id="research_interests">
+                        • <strong>Real-time eXtended Reality</strong>: Designing efficient and practical XR system framework to enable fast-growing XR deployment.<br/>
+                        • <strong>Machine Learning on Real-Time Embedded System</strong>: Supporting high performance machine learning workloads on real-time embedded system like battery-less devices.
+                        </p>
                     </p>
                     <span class="intro_button">
                         <ul id="cv_button" class="actions">
-                            <li><a href="pdfs/CV_Ziliang_Zhang.pdf" class="button">CV</a></li>
+                            <li><a href="pdfs/CV_ZiliangJohnson_Zhang _PhD.pdf" class="btn">CV</a></li>
                         </ul>
                         <ul class="actions">
-                            <li><a href="https://www.linkedin.com/in/ziliang-zhang-19a516167/" class="button">Linkedin</a></li>
+                            <li><a href="pdfs/Resume_Ziliang_SOC_intern.pdf" class="btn">Resume</a></li>
+                        </ul>
+                        <ul class="icons intro_icons">
+                            <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li>
+                            <!-- <li><a href="https://www.instagram.com/zilistzender/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+                            <li><a href="https://github.com/izenderi" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/ziliang-zhang-19a516167/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
                         </ul>
                     </span>
+                    <ul class="icons intro_next_icons">
+                        <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li>
+                        <!-- <li><a href="https://www.instagram.com/zilistzender/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+                        <li><a href="https://github.com/izenderi" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/ziliang-zhang-19a516167/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+                    </ul>
                 </div>
 
-                <span class="image"><img src="images/profile_pic.jpeg" alt="" /></span>
+                <span class="image">
+                    <!-- <img id="profile_pic_web" src="images/profile_pic.jpeg" alt="" />
+                    <img id="profile_pic_mob" src="images/profile_pic_mobile.jpeg" alt="" /> -->
+                    <img id="profile_pic_web" src="images/profile_pic.png" alt="" />
+                    <img id="profile_pic_mob" src="images/profile_pic.png" alt="" />
+                </span>
             </div>
         </section>
 
-        <!-- First Section -->
-        <section id="first" class="main special">
+        <!-- News Section-->
+        <section id="news" class="main special">
             <header class="major">
-                <h2>Projects</h2>
+                <h2>News</h2>
             </header>
-            <ul class="features">
-                <li>
-                    <span class="icon solid major style1 fa-code"></span>
-                    <h3 id="tester">OpenRPT</h3>
-                    <p>A Complete Human-Computer Interaction prototype using Coral DevBoard and wearables display
-                        to perform pose estimation support and deliver output in 720p 30fps videos via teleconferencing software.</p>
-                </li>
-                <li>
-                    <span class="icon major style3 fa-copy"></span>
-                    <h3>Amed sed feugiat</h3>
-                    <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-                </li>
-                <li>
-                    <span class="icon major style5 fa-gem"></span>
-                    <h3>Dolor nullam</h3>
-                    <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-                </li>
-            </ul>
-            <footer class="major">
+            <!-- TODO -->
+            <section class="game-section">
+                <div class="owl-carousel custom-carousel owl-theme">
+                  <!-- <div class="item active" style="background-image: url(images/BOXR.png);">
+                    <div class="item-desc" style="top: -8%;">
+                      <h3 id="carousel_h3">BOXR accepted at <a href="https://2024.rtss.org/">RTSS'24</a></h3>
+                      <p>BOXR: Body and head motion Optimization framework for eXtended Reality. 
+                        First author of the paper. Keyword: eXtended Reality (XR), Real-time System, Scheduling.</p>
+                      <a href="#" class="btn" style="color: white !important;">Paper</a>
+                    </div>
+                  </div> -->
+                  <div class="item active" style="background-image: url(images/MII.png);">
+                    <div class="item-desc" style="top: -8%;">
+                      <h3 id="carousel_h3">MII accepted at <a href="https://esweek.org/emsoft/">EMSOFT'24</a></h3>
+                      <p>[03/2024] MII: A Multifaceted Framework for Intermittence-aware Inference and Scheduling. 
+                        First author of the paper. Keyword: Intermittently-powered Device, Embedded System, Energy Harvesting.</p>
+                        <a href="#" class="btn" style="color: white !important;">Paper</a>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(images/UCR_grad.png);">
+                    <div class="item-desc" style="top: -8%;">
+                      <h3 id="carousel_h3">joined ECE PhD of UCR in 2022</h3>
+                      <p>[09/2022] Joined RTEN lab of UC Riverside in 2022 fall. Joined Dr. Cong Liu's lab in 2023. Co-advised by Dr. Hyoseung Kim and Dr. Cong Liu.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(images/verizon.png);">
+                    <div class="item-desc" style="top: -8%;">
+                      <h3 id="carousel_h3">fullstack software developer in 2021</h3>
+                      <p>[07/2021] Fullstack Software Developer in Verizon GNT Group.
+                        Responsible for Multiple Restful APIs Developement and Maintainance.</p>
+                    </div>
+                  </div>
+                  <div class="item" style="background-image: url(images/UCSD_undergrad.png);">
+                    <div class="item-desc" style="top: -8%;">
+                      <h3 id="carousel_h3">completed B.S. HCI in UCSD 2019</h3>
+                      <p>[06/2019] Graduated from UCSD with B.S. Cognitive Science: Human-Computer Interaction.</p>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <!-- End TODO -->
+            <!-- <footer class="major">
                 <ul class="actions special">
-                    <li><a href="generic.html" class="button">Learn More</a></li>
+                    <li><a href="experiences.html" class="btn">More Experiences</a></li>
                 </ul>
-            </footer>
+            </footer> -->
         </section>
 
-        <!-- Second Section -->
-        <section id="second" class="main special">
+        <!-- research -->
+        <section id="research" class="main special">
             <header class="major">
-                <h2>Ipsum consequat</h2>
-                <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-                    posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+                <h2>Research</h2>
+            </header>
+            <div class="box-container">
+                <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center" style="background-image: url('images/OpenRPT.png');">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Real-time XR</h3>
+                      <p style="margin: 0 0 0 0;">Supporting emergent tasks with runtime framework on state-of-the-art extended reality devices.</p>
+                      <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('images/OpenRPT.png');">
+                    <div class="inner color-white">
+                      <!-- <h3 class="flip-box-header">Real-time XR</h3> -->
+                      <p>Motion Optimization: </p>
+                      <!-- <button class="flip-box-button" id="trigger_tester">Learn More</button> -->
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center" style="background-image: url('images/MII_dark.png');">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Embedded System AI</h3>
+                      <p style="margin: 0 0 0 0;">Deploying intelligent applications on resource constrained hardware platforms.</p>
+                      <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('images/MII_dark.png');">
+                    <div class="inner color-white">
+                      <!-- <h3 class="flip-box-header">Embedded System AI</h3> -->
+                      <p>Intermittence-aware Inference: [EMSOFT'24]</p>
+                      <!-- <button class="flip-box-button">Learn More</button> -->
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="box-item">
+                <div class="flip-box">
+                  <div class="flip-box-front text-center filter-" style="background-image: url('images/batteryless.png');">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Battery-less Devices</h3>
+                      <p style="margin: 0 0 0 0;">Enabling computation-intensive tasks on battery-less devices that harvest ambient energy to operate.</p>
+                      <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                    </div>
+                  </div>
+                  <div class="flip-box-back text-center" style="background-image: url('images/batteryless.png');">
+                    <div class="inner color-white">
+                      <!-- <h3 class="flip-box-header">Battery-less Devices</h3> -->
+                      <p>Energy harvesting devices: [EMSOFT'24]</p>
+                      <!-- <button class="flip-box-button">Learn More</button> -->
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <h3 style="text-align: left;">Publications</h3>
+            <div style="position: relative; text-align: left; margin: 0 0 8px 0;">
+                <button class="btn active" onclick="filterPublications('all')">All</button>
+                <button class="btn" onclick="filterPublications('real-time-xr')">Real-time XR</button>
+                <button class="btn" onclick="filterPublications('embedded-ai')">Embedded AI</button>
+                <button class="btn" onclick="filterPublications('batteryless-devices')">Battery-less Devices</button>
+            </div>
+            <ul class="alt" id="publications-list">
+                <!-- <li class="publication-item all real-time-xr"><strong>Ziliang Zhang</strong>, Zexin Li, Hyoseung Kim, Cong Liu<br/>
+                    BOXR: Body and head motion Optimization framework for eXtended Reality<br/>
+                    45th IEEE Real-Time Systems Symposium (RTSS 2024)
+                    <a href="#">[PDF]</a>
+                </li> -->
+                <li class="publication-item all embedded-ai batteryless-devices"><strong>Ziliang Zhang</strong>, Cong Liu, Hyoseung Kim<br/>
+                    MII: A Multifaceted Framework for Intermittence-aware Inference and Scheduling<br/>
+                    2024 ACM SIGBED International Conference on Embedded Software (EMSOFT 2024)
+                    <a href="#">[PDF]</a>
+                </li>
+                <li class="publication-item all">Yuanjie Zhu, Hussah Alrashid, Song Bai, Chunhan Zhang, <strong>Ziliang Zhang</strong>, Zhengyi Qu, Amr Magdy<br/>
+                    On Construction and Applications of High-Definition (HD) Maps.
+                    <a href="pdfs/On_High_Definition__HD__Maps.pdf">[PDF]</a>
+                </li>
+            </ul>
+            <h3 style="text-align: left;">Projects</h3>
+            <ul class="alt">
+                <li>Ziliang Zhang, Hung-Wei Tseng, Project OpenRPT: Open Remote Physical Therapy, March 2021
+                    <a href="pdfs/Final_OpenRPT.pdf">[Presentation]</a>
+                </li>
+                <li>Ziliang Zhang, Security and Privacy of Data Center Review, Dec 2020
+                    <a href="pdfs/Security_and_Privacy_Data_Centers.pdf">[Presentation]</a>
+                </li>
+            </ul>
+            <h3 style="text-align: left;">Reviewer and Member</h3>
+            <p class="content">
+                &#183; <strong>Current</strong> Lab Member @ RTEN lab & Dr. Cong Liu's Lab<br/>
+                &#183; Former Lab Member @ <a href="https://www.escalab.org/">ESCAL</a>, UCR<br/>
+                &#183; Former Member @ <a href="https://designlab.ucsd.edu/">Design Lab</a>, UCSD<br/>
+                &#183; Former member @ <a href="https://globalties.ucsd.edu/">Global Ties</a>, UCSD<br/>
+                &#183; Former member @ <a href="http://ucsddemocracylab.weebly.com/our-sites.html">Democracy Lab</a>, UCSD<br/>
+            </p>
+        </section>
+
+        <!-- Working -->
+        <section id="working" class="main special">
+          <header class="major">
+            <h2>Working Experience</h2>
+          </header>
+          <h3 style="text-align: left;">Industry Experience</h3>
+          <ul class="alt">
+            <li style="display: flex; justify-content: space-between; align-items: center; overflow: hidden;">
+              <span class="text" style="flex-grow: 1;">
+                [07/2021-09/2022] <strong>Fullstack Software Developer</strong>, Verizon GNT Group.
+                <br />
+                Responsible for Multiple Restful APIs Development and Maintenance.
+              </span>
+              <span class="image">
+                <img src="images/verizon.png" alt="Verizon Logo" 
+                style="flex-shrink: 0; display: block; max-width: 100px; height: auto;" />
+              </span>
+            </li>
+          </ul>
+          <h3 style="text-align: left;">Academia Experience</h3>
+          <ul class="alt">
+            <li style="display: flex; justify-content: space-between; align-items: center; overflow: hidden;">
+              <span class="text" style="flex-grow: 1;">
+                [01/2024-03/2024] <strong>Teaching Assistant</strong>, Electrical and Computer Engineering.<br/>
+                University of California, Riverside.
+                <br/>
+                Assisted with the course EE255 Real-Time Embedded Systems.
+              </span>
+              <span class="image">
+                <img src="images/ucr.png" alt="UCR Logo" 
+                style="flex-shrink: 0; display: block; max-width: 100px; height: auto;" />
+              </span>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center; overflow: hidden;">
+              <span class="text" style="flex-grow: 1;">
+                [01/2023-03/2023] <strong>Teaching Assistant</strong>, Electrical and Computer Engineering.<br/>
+                University of California, Riverside.
+                <br/>
+                Assisted with the course EE128 Data Acquisition, Instrumentation and Process Control.
+              </span>
+              <span class="image">
+                <img src="images/ucr.png" alt="UCR Logo" 
+                style="flex-shrink: 0; display: block; max-width: 100px; height: auto;" />
+              </span>
+            </li>
+            <li style="display: flex; justify-content: space-between; align-items: center; overflow: hidden;">
+              <span class="text" style="flex-grow: 1;">
+                [09/2020-03/2021] <strong>Lab Researcher</strong>, University of California, Riverside.
+                <br />
+                • Developed a Complete Human-Computer Interaction prototype <br/>
+                using Coral DevBoard and wearables display to perform pose estimation <br/> 
+                support and deliver output in 720p 30fps videos via teleconferencing software.<br/>
+                • Conducted actual testing with trainer and improved based on the feedback <br/> 
+                in accessibility and usability. Optimized based on Bluetooth PAN propagation <br/> to achieve one-step operation for users.
+              </span>
+              <span class="image">
+                <img src="images/ucr.png" alt="UCR Logo" 
+                style="flex-shrink: 0; display: block; max-width: 100px; height: auto;" />
+              </span>
+            </li>
+          </ul>
+          <footer class="major">
+                <ul class="actions special">
+                    <li><a href="experiences.html" class="btn">More Experiences</a></li>
+                </ul>
+          </footer>
+        </section>
+
+        <!-- Stats -->
+        <section id="stats" class="main special">
+            <header class="major">
+                <h2>Statistics</h2>
             </header>
             <ul class="statistics">
                 <li class="style1">
-                    <span class="icon solid fa-code-branch"></span>
-                    <strong>5,120</strong> Etiam
+                    <span class="icon solid fa-compass"></span>
+                    <strong class="count">2022</strong> PhD Since
                 </li>
                 <li class="style2">
-                    <span class="icon fa-folder-open"></span>
-                    <strong>8,192</strong> Magna
+                    <span class="icon fa-handshake"></span>
+                    <strong class="count">2017</strong> Work Since
                 </li>
                 <li class="style3">
-                    <span class="icon solid fa-signal"></span>
-                    <strong>2,048</strong> Tempus
+                    <span class="icon solid fa-microscope"></span>
+                    <strong class="count">2015</strong> Research Since
                 </li>
                 <li class="style4">
                     <span class="icon solid fa-laptop"></span>
-                    <strong>4,096</strong> Aliquam
+                    <strong class="count">26</strong> Projects Worked
                 </li>
                 <li class="style5">
-                    <span class="icon fa-gem"></span>
-                    <strong>1,024</strong> Nullam
+                    <span class="icon solid fa-users"></span>
+                    <strong class="count">8</strong> Team Joined
                 </li>
             </ul>
-            <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-            <footer class="major">
-                <ul class="actions special">
-                    <li><a href="generic.html" class="button">Learn More</a></li>
-                </ul>
-            </footer>
         </section>
-
-        <!-- Get Started -->
-        <section id="cta" class="main special">
-            <header class="major">
-                <h2>Congue imperdiet</h2>
-                <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-                    posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-            </header>
-            <footer class="major">
-                <ul class="actions special">
-                    <li><a href="generic.html" class="button primary">Get Started</a></li>
-                    <li><a href="generic.html" class="button">Learn More</a></li>
-                </ul>
-            </footer>
-        </section>
-
     </div>
 
     <!-- Footer -->
     <footer id="footer">
-<!--        <section>-->
-<!--            <h2>Aliquam sed mauris</h2>-->
-<!--            <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>-->
-<!--            <ul class="actions">-->
-<!--                <li><a href="generic.html" class="button">Learn More</a></li>-->
-<!--            </ul>-->
-<!--        </section>-->
-<!--        <section>-->
-<!--            <h2>Etiam feugiat</h2>-->
-<!--            <dl class="alt">-->
-<!--                <dt>Address</dt>-->
-<!--                <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>-->
-<!--                <dt>Phone</dt>-->
-<!--                <dd>(000) 000-0000 x 0000</dd>-->
-<!--                <dt>Email</dt>-->
-<!--                <dd><a href="#">information@untitled.tld</a></dd>-->
-<!--            </dl>-->
-<!--            <ul class="icons">-->
-<!--                <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>-->
-<!--                <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>-->
-<!--                <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>-->
-<!--                <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>-->
-<!--                <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>-->
-<!--            </ul>-->
-<!--        </section>-->
-        <p class="copyright">&copy; updated 2022. Design: Ziliang Zhang.</p>
+       <!-- <section>
+           <h2>Aliquam sed mauris</h2>
+           <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+           <ul class="actions">
+               <li><a href="generic.html" class="button">Learn More</a></li>
+           </ul>
+       </section>
+       <section>
+           <h2>Etiam feugiat</h2>
+           <dl class="alt">
+               <dt>Address</dt>
+               <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+               <dt>Phone</dt>
+               <dd>(000) 000-0000 x 0000</dd>
+               <dt>Email</dt>
+               <dd><a href="#">information@untitled.tld</a></dd>
+           </dl>
+           <ul class="icons">
+               <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+               <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+               <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+               <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+               <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+           </ul>
+       </section>
+       <span class="count">100000000</span> -->
+        <p class="copyright">&copy; updated 2024. Design: Ziliang Zhang.</p>
     </footer>
 
 </div>
@@ -206,6 +426,16 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="https://kit.fontawesome.com/8bb9b27d5d.js" crossorigin="anonymous"></script>
+<!-- Increase number count jquery -->
+<script src="assets/js/increase.js"></script>
+<!-- Slider -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script  src="assets/js/slider.js"></script>
+
 
 </body>
 </html>

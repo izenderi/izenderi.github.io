@@ -1,5 +1,5 @@
 /*
-	Profile Page Project 2022
+	Profile Page Project 2023
     (c) izenderi
     https://izenderi.github.io/
 	Ziliang Zhang - https://github.com/izenderi/
@@ -122,3 +122,140 @@
     });
 
 })(jQuery);
+
+(function(){
+    'use strict';
+  
+    class Menu {
+      constructor(settings) {
+        this.menuRootNode = settings.menuRootNode;
+        this.isOpened = false;
+      }
+      
+      changeMenuState(menuState) {
+        return this.isOpened = !menuState;
+      }
+      
+      changeToggleHint(toggleHint, toggleNode) {
+        toggleNode.textContent = toggleHint;
+        return toggleHint; 
+      }
+    }
+  
+    const menuClassesNames = {
+      rootClass: 'menu',
+      activeClass: 'menu_activated',
+      toggleClass: 'menu__toggle',
+      toggleHintClass: 'menu__toggle-hint',
+      menuNav:'menu__nav',
+      menuGroup:'menu__group'
+    }
+    
+    const jsMenuNode = document.querySelector(`.${menuClassesNames.rootClass}`);
+    const demoMenu = new Menu ({
+      menuRootNode: jsMenuNode
+    });
+    
+    function getCurrentToggleHint(currentMenuState) {
+      return (currentMenuState !== true) ? 'Open menu' : 'Close menu';
+    }
+    
+    function toggleMenu(event) {
+      
+        let currentMenuState = demoMenu.changeMenuState(demoMenu.isOpened);
+        let toggleHint = getCurrentToggleHint(currentMenuState);
+        
+        demoMenu.changeToggleHint(
+          toggleHint, 
+          demoMenu.menuRootNode.querySelector(`.${menuClassesNames.toggleHintClass}`)
+        );
+        demoMenu.menuRootNode.classList.toggle(`${menuClassesNames.activeClass}`);
+        
+        return currentMenuState;  
+    }
+    
+    jsMenuNode.querySelector(`.${menuClassesNames.toggleClass}`).addEventListener('click', toggleMenu);
+
+    jsMenuNode.querySelector(`.${menuClassesNames.menuNav}`).addEventListener('click', toggleMenu);
+  })(jQuery);
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Get the button with id 'trigger_tester'
+//   const triggerButton = document.getElementById('trigger_tester');
+
+//   // Add click event listener to the button
+//   if (triggerButton) {
+//     triggerButton.addEventListener('click', function() {
+//       // Get the element with id 'tester'
+//       const testerElement = document.getElementById('tester');
+      
+//       // Change the background color to pink with animation
+//       if (testerElement) {
+//         testerElement.style.animation = 'colorChangeToPink 1s forwards';
+        
+//         // Scroll to 50px above the element
+//         const yOffset = -50; 
+//         const y = testerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+//         window.scrollTo({ top: y, behavior: 'smooth' });
+
+//         // Set timeout to revert the color back with animation after 3 seconds
+//         setTimeout(function() {
+//           testerElement.style.animation = 'colorChangeToOriginal 1s forwards';
+//         }, 3000);
+//       }
+//     });
+//   }
+// });
+
+function filterPublications(category) {
+    // Remove active class from all buttons
+    var buttons = document.querySelectorAll('.btn');
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    // Add active class to the clicked button
+    var activeButton = document.querySelector('.btn[onclick="filterPublications(\'' + category + '\')"]');
+    activeButton.classList.add('active');
+
+    // Show/Hide publications based on the selected category with fade animation
+    var items = document.querySelectorAll('.publication-item');
+    items.forEach(function(item) {
+        if (category === 'all' || item.classList.contains(category)) {
+            fadeIn(item);
+        } else {
+            fadeOut(item);
+        }
+    });
+}
+
+function fadeIn(element) {
+    element.style.display = 'list-item';
+    element.style.opacity = 0;
+    let opacity = 0;
+    const intervalID = setInterval(function() {
+        if (opacity < 1) {
+            opacity += 0.1;
+            element.style.opacity = opacity;
+        } else {
+            clearInterval(intervalID);
+        }
+    }, 25);
+}
+
+function fadeOut(element) {
+    let opacity = 1;
+    const intervalID = setInterval(function() {
+        if (opacity > 0) {
+            opacity -= 0.1;
+            element.style.opacity = opacity;
+        } else {
+            clearInterval(intervalID);
+            element.style.display = 'none';
+        }
+    }, 25);
+}
+
+// Initialize to show all publications by default
+filterPublications('all');
+
