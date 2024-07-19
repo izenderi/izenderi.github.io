@@ -178,3 +178,84 @@
 
     jsMenuNode.querySelector(`.${menuClassesNames.menuNav}`).addEventListener('click', toggleMenu);
   })(jQuery);
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Get the button with id 'trigger_tester'
+//   const triggerButton = document.getElementById('trigger_tester');
+
+//   // Add click event listener to the button
+//   if (triggerButton) {
+//     triggerButton.addEventListener('click', function() {
+//       // Get the element with id 'tester'
+//       const testerElement = document.getElementById('tester');
+      
+//       // Change the background color to pink with animation
+//       if (testerElement) {
+//         testerElement.style.animation = 'colorChangeToPink 1s forwards';
+        
+//         // Scroll to 50px above the element
+//         const yOffset = -50; 
+//         const y = testerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+//         window.scrollTo({ top: y, behavior: 'smooth' });
+
+//         // Set timeout to revert the color back with animation after 3 seconds
+//         setTimeout(function() {
+//           testerElement.style.animation = 'colorChangeToOriginal 1s forwards';
+//         }, 3000);
+//       }
+//     });
+//   }
+// });
+
+function filterPublications(category) {
+    // Remove active class from all buttons
+    var buttons = document.querySelectorAll('.btn');
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    // Add active class to the clicked button
+    var activeButton = document.querySelector('.btn[onclick="filterPublications(\'' + category + '\')"]');
+    activeButton.classList.add('active');
+
+    // Show/Hide publications based on the selected category with fade animation
+    var items = document.querySelectorAll('.publication-item');
+    items.forEach(function(item) {
+        if (category === 'all' || item.classList.contains(category)) {
+            fadeIn(item);
+        } else {
+            fadeOut(item);
+        }
+    });
+}
+
+function fadeIn(element) {
+    element.style.display = 'list-item';
+    element.style.opacity = 0;
+    let opacity = 0;
+    const intervalID = setInterval(function() {
+        if (opacity < 1) {
+            opacity += 0.1;
+            element.style.opacity = opacity;
+        } else {
+            clearInterval(intervalID);
+        }
+    }, 25);
+}
+
+function fadeOut(element) {
+    let opacity = 1;
+    const intervalID = setInterval(function() {
+        if (opacity > 0) {
+            opacity -= 0.1;
+            element.style.opacity = opacity;
+        } else {
+            clearInterval(intervalID);
+            element.style.display = 'none';
+        }
+    }, 25);
+}
+
+// Initialize to show all publications by default
+filterPublications('all');
+
