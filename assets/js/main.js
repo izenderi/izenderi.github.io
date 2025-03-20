@@ -1,5 +1,5 @@
 /*
-	Profile Page Project 2023
+	Ziliang Profile Page
     (c) izenderi
     https://izenderi.github.io/
 	Ziliang Zhang - https://github.com/izenderi/
@@ -178,34 +178,6 @@
 
     jsMenuNode.querySelector(`.${menuClassesNames.menuNav}`).addEventListener('click', toggleMenu);
   })(jQuery);
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   // Get the button with id 'trigger_tester'
-//   const triggerButton = document.getElementById('trigger_tester');
-
-//   // Add click event listener to the button
-//   if (triggerButton) {
-//     triggerButton.addEventListener('click', function() {
-//       // Get the element with id 'tester'
-//       const testerElement = document.getElementById('tester');
-      
-//       // Change the background color to pink with animation
-//       if (testerElement) {
-//         testerElement.style.animation = 'colorChangeToPink 1s forwards';
-        
-//         // Scroll to 50px above the element
-//         const yOffset = -50; 
-//         const y = testerElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-//         window.scrollTo({ top: y, behavior: 'smooth' });
-
-//         // Set timeout to revert the color back with animation after 3 seconds
-//         setTimeout(function() {
-//           testerElement.style.animation = 'colorChangeToOriginal 1s forwards';
-//         }, 3000);
-//       }
-//     });
-//   }
-// });
 
 function filterPublications(category) {
     // Remove active class from all buttons

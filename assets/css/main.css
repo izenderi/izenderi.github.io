@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
-	Profile Page Project 2023
+	Ziliang Profile Page
     (c) izenderi
     https://izenderi.github.io/
 	Ziliang Zhang - https://github.com/izenderi/
@@ -3503,7 +3503,7 @@ body.is-touch .tiles article .content {
 
 }
 
-body.is-preload #header.alt > * {
+/* body.is-preload #header.alt > * {
     opacity: 0;
 }
 
@@ -3512,7 +3512,7 @@ body.is-preload #header.alt .logo {
     -webkit-transform: scale(0.8) rotate(-30deg);
     -ms-transform: scale(0.8) rotate(-30deg);
     transform: scale(0.8) rotate(-30deg);
-}
+} */
 
 /* Nav */
 
