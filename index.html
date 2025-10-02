@@ -10,6 +10,9 @@
     <title>Ziliang Zhang Profile Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/png" href="images/profile_pic.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -88,13 +91,13 @@
                         Riverside, advised by
                         <a href="https://intra.engr.ucr.edu/~htseng/">Dr. Hung-Wei Tseng</a>, and B.S. Cognitive Science with Specialization of
                         Human-Computer Interaction in University of California San Diego. I have
-                        also worked as a senior full-stack software developing engineer in
+                        also worked as an EDG intern in MathWorks&trade; GPU coder team and senior full-stack software developing engineer in
                         Verizon&trade; GNT group.
                     </p>
-                    <p style="margin-bottom: 0;">Current research interests are:
+                    <p style="margin-bottom: 0;">My research interests are:
                         <p id="research_interests">
-                        • <strong>Real-time eXtended Reality</strong>: Designing efficient and practical XR system framework to enable fast-growing XR deployment.<br/>
-                        • <strong>Machine Learning on Real-Time Embedded System</strong>: Supporting high performance machine learning workloads on real-time embedded system like battery-less devices.
+                        • <strong>Real-time eXtended Reality</strong>: Designing efficient and practical XR system framework to enable fast-growing AI glasses, VR/AR and XR teleoperation industries.<br/>
+                        • <strong>Machine Learning on Real-Time Embedded System</strong>: Supporting performance-demanding machine learning workloads on mobile, battery-less, and NVIDIA Jetson devices.
                         </p>
                     </p>
                     <span class="intro_button">
@@ -105,19 +108,17 @@
                             <li><a href="pdfs/Resume_Ziliang_EE.pdf" class="btn">Resume</a></li>
                         </ul>
                         <ul class="icons intro_icons">
-                            <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li>
-                            <!-- <li><a href="https://www.instagram.com/zilistzender/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-                            <li><a href="https://github.com/izenderi" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/ziliangzhang/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-                            <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+                            <!-- <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon fa-brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li> -->
+                            <!-- <li><a href="https://www.instagram.com/zilistzender/" class="icon fa-brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+                            <li><a href="https://github.com/izenderi" class="icon fa-brands fa-github alt"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/ziliangzhang/" class="icon fa-brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+                            <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon ai ai-google-scholar alt"><span class="label">Google Scholar</span></a></li>
                         </ul>
                     </span>
                     <ul class="icons intro_next_icons">
-                        <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li>
-                        <!-- <li><a href="https://www.instagram.com/zilistzender/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
-                        <li><a href="https://github.com/izenderi" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                        <li><a href="https://www.linkedin.com/in/ziliangzhang/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-                        <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon brands fa-google alt"><span class="label">Google Scholar</span></a></li>
+                        <li><a href="https://github.com/izenderi" class="icon fa-brands fa-github alt"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/ziliangzhang/" class="icon fa-brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+                        <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon ai ai-google-scholar alt"><span class="label">Google Scholar</span></a></li>
                     </ul>
                 </div>
 
@@ -133,8 +134,10 @@
             <header class="major">
                 <h2>News</h2>
             </header>
-            <!-- TODO -->
             <ul class="alt" id="news-list">
+              <li>
+                <strong>06/2025</strong>: Joined MathWorks as a EDG Intern - GPU Coder team for Summer 2025
+              </li>
               <li>
                 <strong>09/2024</strong>: One paper has been accepted by 2024 Southern California Robotics Symposium (SCR 2024)
               </li>
@@ -218,50 +221,63 @@
                 <button class="btn" onclick="filterPublications('batteryless-devices')">Battery-less Devices</button>
             </div>
             <ul class="alt" id="publications-list">
-                <li class="publication-item all real-time-xr"><strong>Ziliang Zhang</strong>, Zexin Li, Hyoseung Kim, Cong Liu<br/>
+                <li class="publication-item all embedded-ai batteryless-devices">
+                    Low-Cost Sensing and Classification for Early Stress and Disease Detection in Avocado Plants<br/>
+                    Abdulrahman Bukhari, Bullo Mamo, Mst Shamima Hossain, <strong>Ziliang Zhang</strong>, Mohsen Karimi, Daniel Enright, Patricia Manosalva, Hyoseung Kim<br/>
+                    2025 IEEE Internet of Things Journal (IoT-J 2025)
+                    [<a href="https://doi.org/10.1109/JIOT.2025.3601502">Proceeding</a>]
+                </li>
+                <li class="publication-item all real-time-xr">
                     BOXR: Body and head motion Optimization framework for eXtended Reality<br/>
+                    <strong>Ziliang Zhang</strong>, Zexin Li, Hyoseung Kim, Cong Liu<br/>
                     45th IEEE Real-Time Systems Symposium (RTSS 2024)
                     [<a href="pdfs/paper2_BoXR.pdf">PDF</a> | 
                     <a href="pdfs/BOXR_RTSS_v3.pptx">Talk</a> | 
                     <a href="https://arxiv.org/abs/2410.13084">arXiv</a> | 
                     <a href="https://doi.ieeecomputersociety.org/10.1109/RTSS62706.2024.00016">Proceeding</a>]
                 </li>
-                <li class="publication-item all embedded-ai batteryless-devices"><strong>Ziliang Zhang</strong>, Cong Liu, Hyoseung Kim<br/>
+                <li class="publication-item all embedded-ai batteryless-devices">
                     MII: A Multifaceted Framework for Intermittence-aware Inference and Scheduling<br/>
+                    <strong>Ziliang Zhang</strong>, Cong Liu, Hyoseung Kim<br/>
                     2024 ACM SIGBED International Conference on Embedded Software (EMSOFT 2024)
                     [<a href="pdfs/paper1_MII.pdf">PDF</a> | <a href="https://doi.org/10.1109/TCAD.2024.3443710">Proceeding</a>]
                 </li>
-                <li class="publication-item all real-time-xr"><strong>Ziliang Zhang</strong>, Cong Liu, Hyoseung Kim<br/>
+                <li class="publication-item all real-time-xr">
                     Toward a Predictive eXtended Reality Teleoperation System with Duo-Virtual Spaces<br/>
+                    <strong>Ziliang Zhang</strong>, Cong Liu, Hyoseung Kim<br/>
                     2024 Southern California Robotics Symposium (SCR 2024)
                     [<a href="pdfs/paper3_XR_robot.pdf">PDF</a>]
                 </li>
-                <li class="publication-item all">Yuanjie Zhuy, Hussah Alrashid, Song Bai, Chunhan Zhang, <strong>Ziliang Zhang</strong>, Zhengyi Qu, Reem Y Ali, Amr Magdy<br/>
+                <li class="publication-item all">
                   On the Ecosystem of High-Definition (HD) Maps<br/>
+                  Yuanjie Zhuy, Hussah Alrashid, Song Bai, Chunhan Zhang, <strong>Ziliang Zhang</strong>, Zhengyi Qu, Reem Y Ali, Amr Magdy<br/>
                   2024 IEEE 40th International Conference on Data Engineering Workshops (ICDEW 2024)
                     [<a href="https://doi.org/10.1109/ICDEW61823.2024.00010">Proceeding</a>]
                 </li>
-                <li class="publication-item all embedded-ai batteryless-devices"><strong>Ziliang Zhang</strong><br/>
+                <li class="publication-item all embedded-ai batteryless-devices">
                     Accelerate Intermittent Deep Inference <br/>
-                    arXiv:2407.14514
-                    [<a href="https://arxiv.org/abs/2407.14514">arXiv</a>]
+                    <strong>Ziliang Zhang</strong><br/>
+                    arXiv:2407.14514 [<a href="https://arxiv.org/abs/2407.14514">arXiv</a>]
                 </li>
             </ul>
             <h3 style="text-align: left;">Projects</h3>
             <ul class="alt">
-                <li><strong>Ziliang Zhang</strong>, Hung-Wei Tseng<br/>
-                  Project OpenRPT: Open Remote Physical Therapy, 03/2021
-                    <a href="pdfs/Final_OpenRPT.pdf">[Presentation]</a>
+                <li>
+                  Project OpenRPT: Open Remote Physical Therapy<br/>
+                  <strong>Ziliang Zhang</strong>, Hung-Wei Tseng<br/>
+                  03/2021 <a href="pdfs/Final_OpenRPT.pdf">[Presentation]</a><br/>
                 </li>
-                <li><strong>Ziliang Zhang</strong><br/>
-                  Security and Privacy of Data Center Review, 12/2020
-                    <a href="pdfs/Security_and_Privacy_Data_Centers.pdf">[Presentation]</a>
+                <li>
+                  Security and Privacy of Data Center Review<br/>
+                    <strong>Ziliang Zhang</strong><br/>
+                  12/2020 <a href="pdfs/Security_and_Privacy_of_Data_Center_Review.pdf">[Report]</a><br/>
                 </li>
             </ul>
             <h3 style="text-align: left;">Reviewer and Member</h3>
             <p class="content">
                 &#183; <strong>Current</strong> member @ <a href="https://github.com/rtenlab">RTEN</a> Lab & <a href="https://intra.ece.ucr.edu/~cong/">Dr. Cong Liu's</a> Lab<br/>
                 &#183; External Reviewer @ IEEE Real-Time Systems Symposium (RTSS)<br/>
+                &#183; Reviewer @ Journal of Systems Architecture (JSA)<br/>
                 &#183; Former member @ <a href="https://www.escalab.org/">ESCAL</a>, UCR<br/>
                 &#183; Former member @ <a href="https://designlab.ucsd.edu/">Design Lab</a>, UCSD<br/>
                 &#183; Former member @ <a href="https://globalties.ucsd.edu/">Global Ties</a>, UCSD<br/>
@@ -301,6 +317,17 @@
           </ul>
           <h3 style="text-align: left;">Work Experience</h3>
           <ul class="alt">
+            <li style="display: flex; justify-content: space-between; align-items: center; overflow: hidden;">
+              <span class="text" style="width:60%;">
+                [06/2025-09/2025] <strong>EDG Intern - GPU Coder Team</strong>, MathWorks.
+                <br />
+                Developed IR optimization for CUDA Codegen and achieves 17x speedup in MATLAB product.
+              </span>
+              <span class="image">
+                <img src="images/mathworks.gif" alt="Verizon Logo" 
+                style="flex-shrink: 0; display: block; max-width: 100px; height: auto;" />
+              </span>
+            </li>
             <li style="display: flex; justify-content: space-between; align-items: center; overflow: hidden;">
               <span class="text" style="width:60%;">
                 [07/2021-09/2022] <strong>Fullstack Software Developer</strong>, Verizon GNT Group.
@@ -403,11 +430,11 @@
                <dd><a href="#">information@untitled.tld</a></dd>
            </dl>
            <ul class="icons">
-               <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-               <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-               <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-               <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-               <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+               <li><a href="#" class="icon fa-brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+               <li><a href="#" class="icon fa-brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+               <li><a href="#" class="icon fa-brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+               <li><a href="#" class="icon fa-brands fa-github alt"><span class="label">GitHub</span></a></li>
+               <li><a href="#" class="icon fa-brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
            </ul>
        </section>
        <span class="count">100000000</span> -->

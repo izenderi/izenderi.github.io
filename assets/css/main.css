@@ -1,4 +1,3 @@
-@import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
@@ -2106,7 +2105,7 @@ input[type="radio"] + label:before {
    text-rendering: auto;
    line-height: 1;
    text-transform: none !important;
-   font-family: 'Font Awesome 5 Free';
+   font-family: 'Font Awesome 6 Free';
    font-weight: 900;
 }
 
@@ -2251,7 +2250,7 @@ input[type="radio"]:focus + label:before {
    text-rendering: auto;
    line-height: 1;
    text-transform: none !important;
-   font-family: 'Font Awesome 5 Free';
+   font-family: 'Font Awesome 6 Free';
    font-weight: 400;
 }
 
@@ -2267,8 +2266,13 @@ input[type="radio"]:focus + label:before {
    font-weight: 900;
 }
 
-.icon.brands:before {
-   font-family: 'Font Awesome 5 Brands';
+.icon.brands:before,
+.icon.fa-brands:before {
+   font-family: 'Font Awesome 6 Brands';
+}
+
+.icon.ai:before {
+   font-family: 'Academicons';
 }
 
 .icon.major {
