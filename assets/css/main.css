@@ -3611,6 +3611,39 @@ body.is-preload #header.alt .logo {
     box-shadow: none;
 }
 
+#nav ul li .nav-theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25em;
+    min-width: 2.25em;
+    height: 2.25em;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+#nav ul li .nav-theme-toggle:focus-visible {
+    outline: 2px solid #8cc9f0;
+    outline-offset: 2px;
+}
+
+#nav ul li .nav-theme-toggle .theme-toggle-icon {
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+#nav ul li .nav-theme-toggle:hover {
+    background-color: rgba(222, 222, 222, 0.25);
+}
+
 #nav.alt {
     position: fixed;
     top: 0;
@@ -4412,6 +4445,34 @@ body.is-preload #header.alt .logo {
     font-weight: 700;
     /* text-transform: uppercase; */
   }
+
+  /* Same box model as .menu__link: padding lives on .menu__group only */
+  .menu-theme-btn {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 0.45em;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: left;
+    color: var(--rLinkTextColor, var(--colorWhite)) !important;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .menu-theme-btn .theme-toggle-icon {
+    font-size: 1em;
+    line-height: 1;
+    flex-shrink: 0;
+  }
   
   .linktr{
     order: -1;
@@ -4440,9 +4501,12 @@ body.is-preload #header.alt .logo {
     .menu__toggle {display:none;}
   }
 
-  /* Intro Icons */
+  /* Intro Icons: below 1032px the icon row moves under the CV button — add space between */
   @media all and (max-width: 1031px) {
     .intro_icons {display:none;}
+    .intro_next_icons {
+      margin-top: 1.5em;
+    }
   }
 
   @media all and (min-width: 1032px) {

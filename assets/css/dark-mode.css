@@ -1,0 +1,354 @@
+/*
+    Dark theme overrides (html[data-theme="dark"])
+    Loaded after main.css
+*/
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --colorMain: #3a3a44;
+    --colorWhite: #f0f0f4;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] body#experience_body {
+    /* Solid fill only — drop top/bottom decorative images from light theme */
+    background: #252528 none;
+    background-image: none !important;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+html[data-theme="dark"] #header p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Nav (desktop) */
+html[data-theme="dark"] #nav {
+    background-color: #2f2f36;
+    color: #c8c8d0;
+}
+
+html[data-theme="dark"] #nav input,
+html[data-theme="dark"] #nav select,
+html[data-theme="dark"] #nav textarea {
+    color: #c8c8d0;
+}
+
+html[data-theme="dark"] #nav a:hover {
+    color: #e8e8f0;
+}
+
+html[data-theme="dark"] #nav strong,
+html[data-theme="dark"] #nav b,
+html[data-theme="dark"] #nav h1,
+html[data-theme="dark"] #nav h2,
+html[data-theme="dark"] #nav h3,
+html[data-theme="dark"] #nav h4,
+html[data-theme="dark"] #nav h5,
+html[data-theme="dark"] #nav h6 {
+    color: #c8c8d0;
+}
+
+html[data-theme="dark"] #nav blockquote {
+    border-left-color: #55555e;
+}
+
+html[data-theme="dark"] #nav code {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #55555e;
+}
+
+html[data-theme="dark"] #nav hr {
+    border-bottom-color: #55555e;
+}
+
+html[data-theme="dark"] #nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] #nav ul li a.active {
+    background-color: #3d3d46;
+    box-shadow: none;
+}
+
+html[data-theme="dark"] #nav.alt {
+    background-color: rgba(47, 47, 54, 0.96);
+}
+
+html[data-theme="dark"] #nav ul li .nav-theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Main content */
+html[data-theme="dark"] #main {
+    background-color: #1e1e24;
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main input,
+html[data-theme="dark"] #main select,
+html[data-theme="dark"] #main textarea {
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main a:hover {
+    color: #e0e0e8;
+}
+
+html[data-theme="dark"] #main strong,
+html[data-theme="dark"] #main b,
+html[data-theme="dark"] #main h1,
+html[data-theme="dark"] #main h2,
+html[data-theme="dark"] #main h3,
+html[data-theme="dark"] #main h4,
+html[data-theme="dark"] #main h5,
+html[data-theme="dark"] #main h6 {
+    color: #e2e2ea;
+}
+
+html[data-theme="dark"] #main blockquote {
+    border-left-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main code {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main hr {
+    border-bottom-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main .box {
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main input[type="submit"],
+html[data-theme="dark"] #main input[type="reset"],
+html[data-theme="dark"] #main input[type="btn"],
+html[data-theme="dark"] #main btn,
+html[data-theme="dark"] #main .btn {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #5c5c68;
+    color: #c4c4cc !important;
+}
+
+html[data-theme="dark"] #main input[type="submit"]:hover,
+html[data-theme="dark"] #main input[type="reset"]:hover,
+html[data-theme="dark"] #main input[type="btn"]:hover,
+html[data-theme="dark"] #main btn:hover,
+html[data-theme="dark"] #main .btn:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+html[data-theme="dark"] #main input[type="submit"]:active,
+html[data-theme="dark"] #main input[type="reset"]:active,
+html[data-theme="dark"] #main input[type="btn"]:active,
+html[data-theme="dark"] #main btn:active,
+html[data-theme="dark"] #main .btn:active {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme="dark"] #main input[type="submit"].icon:before,
+html[data-theme="dark"] #main input[type="reset"].icon:before,
+html[data-theme="dark"] #main input[type="btn"].icon:before,
+html[data-theme="dark"] #main btn.icon:before,
+html[data-theme="dark"] #main .btn.icon:before {
+    color: rgba(196, 196, 204, 0.35);
+}
+
+html[data-theme="dark"] #main label {
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main input[type="text"],
+html[data-theme="dark"] #main input[type="password"],
+html[data-theme="dark"] #main input[type="email"],
+html[data-theme="dark"] #main select,
+html[data-theme="dark"] #main textarea {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main select option {
+    color: #c4c4cc;
+    background: #2a2a32;
+}
+
+html[data-theme="dark"] #main input[type="checkbox"] + label,
+html[data-theme="dark"] #main input[type="radio"] + label {
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main input[type="checkbox"] + label:before,
+html[data-theme="dark"] #main input[type="radio"] + label:before {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main input[type="checkbox"]:checked + label:before,
+html[data-theme="dark"] #main input[type="radio"]:checked + label:before {
+    background-color: #8cc9f0;
+    border-color: #8cc9f0;
+    color: #1e1e24;
+}
+
+html[data-theme="dark"] #main .icon.major {
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main .icon.major:before {
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main .icon.alt {
+    border-color: #4a4a54;
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main .icon.alt:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+html[data-theme="dark"] #main .icon.alt:active {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme="dark"] #main ul.alt li {
+    border-top-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main dl dt {
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main header.major h2:after {
+    background-color: #4a4a54;
+    background-image: linear-gradient(90deg, #c77a85, #8b7aad, #6ba8d4);
+}
+
+html[data-theme="dark"] #main table tbody tr {
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main table tbody tr:nth-child(2n + 1) {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+html[data-theme="dark"] #main table th {
+    color: #c4c4cc;
+}
+
+html[data-theme="dark"] #main table thead {
+    border-bottom-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main table tfoot {
+    border-top-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main table.alt tbody tr td {
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main .spotlight .image {
+    border-color: #4a4a54;
+}
+
+html[data-theme="dark"] #main > .main {
+    border-top-color: #4a4a54;
+}
+
+html[data-theme="dark"] .btn.active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Global .btn (header / forms outside #main) */
+html[data-theme="dark"] input[type="submit"],
+html[data-theme="dark"] input[type="reset"],
+html[data-theme="dark"] .btn {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+html[data-theme="dark"] input[type="submit"]:hover,
+html[data-theme="dark"] input[type="reset"]:hover,
+html[data-theme="dark"] .btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] input[type="submit"]:active,
+html[data-theme="dark"] input[type="reset"]:active,
+html[data-theme="dark"] .btn:active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Statistics — dark surfaces (no light gray / white tiles) */
+html[data-theme="dark"] #stats .statistics li {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+html[data-theme="dark"] #stats .statistics li.style1 {
+    background-color: #2a2a32;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+html[data-theme="dark"] #stats .statistics li.style1 .icon:before {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+html[data-theme="dark"] #stats .statistics li.style2 {
+    background-color: #31313a;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+html[data-theme="dark"] #stats .statistics li.style2 .icon:before {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+html[data-theme="dark"] #stats .statistics li.style3 {
+    background-color: #3a3a44;
+    color: rgba(255, 255, 255, 0.94);
+}
+
+html[data-theme="dark"] #stats .statistics li.style3 .icon:before {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+html[data-theme="dark"] #stats .statistics li.style4 {
+    background-color: #43434f;
+    color: #ffffff;
+}
+
+html[data-theme="dark"] #stats .statistics li.style4 .icon:before {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+html[data-theme="dark"] #stats .statistics li.style5 {
+    background-color: #4d4d5c;
+    color: #ffffff;
+}
+
+html[data-theme="dark"] #stats .statistics li.style5 .icon:before {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Mobile menu overlay */
+html[data-theme="dark"] .menu__group {
+    --rLinkTextColor: var(--colorWhite);
+}
+
+html[data-theme="dark"] .menu-theme-btn {
+    color: var(--colorWhite) !important;
+}
+
+html[data-theme="dark"] .m-hamburger::before,
+html[data-theme="dark"] .m-hamburger::after,
+html[data-theme="dark"] .m-hamburger__label {
+    --hamburgerBackgroundColor: #e8e8f0;
+}
+
+/* Footer */
+html[data-theme="dark"] #footer .copyright {
+    color: rgba(255, 255, 255, 0.75);
+}

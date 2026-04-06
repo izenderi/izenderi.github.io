@@ -5,15 +5,18 @@
     https://izenderi.github.io/
 	Ziliang Zhang - https://github.com/izenderi/
 -->
-<html>
+<html lang="en">
 <head>
     <title>Ziliang Zhang Profile Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="assets/js/theme.js"></script>
     <link rel="icon" type="image/png" href="images/profile_pic.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/dark-mode.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="is-preload">
@@ -41,6 +44,11 @@
             <li><a href="#research">Research</a></li>
             <li><a href="#working">Experiences</a></li>
             <li><a href="#stats">Stats</a></li>
+            <li>
+                <button type="button" class="nav-theme-toggle theme-toggle" aria-label="Toggle color theme">
+                    <i class="fa-solid fa-moon theme-toggle-icon" aria-hidden="true"></i>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -48,6 +56,12 @@
     <div class="menu">
         <nav class="menu__nav">
           <ul class="menu__list r-list">
+            <li class="menu__group">
+              <button type="button" class="theme-toggle menu-theme-btn" aria-label="Toggle color theme">
+                  <i class="fa-solid fa-moon theme-toggle-icon" aria-hidden="true"></i>
+                  <span>Theme</span>
+              </button>
+            </li>
             <li class="menu__group">
               <a href="#intro" class="menu__link r-link">About me</a>
             </li>
@@ -102,11 +116,11 @@
                     </p>
                     <span class="intro_button">
                         <ul id="cv_button" class="actions">
-                            <li><a href="pdfs/2024CV_Ziliang_Zhang.pdf" class="btn">CV</a></li>
+                            <li><a href="pdfs/CV_Ziliang_Zhang_ML.pdf" class="btn">CV</a></li>
                         </ul>
-                        <ul class="actions">
-                            <li><a href="pdfs/Resume_Ziliang_EE.pdf" class="btn">Resume</a></li>
-                        </ul>
+                        <!-- <ul class="actions">
+                            <li><a href="pdfs/CV_Ziliang_Zhang_ML.pdf" class="btn">Resume</a></li>
+                        </ul> -->
                         <ul class="icons intro_icons">
                             <!-- <li><a href="https://scholar.google.com/citations?user=hG9raeMAAAAJ&hl=en" class="icon fa-brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li> -->
                             <!-- <li><a href="https://www.instagram.com/zilistzender/" class="icon fa-brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
@@ -451,7 +465,7 @@
            </ul>
        </section>
        <span class="count">100000000</span> -->
-        <p class="copyright">&copy; Updated 2025. Design: Ziliang Zhang.</p>
+        <p class="copyright">&copy; Updated 2026. Design: Ziliang Zhang.</p>
     </footer>
 
 </div>

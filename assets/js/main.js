@@ -188,7 +188,9 @@ function filterPublications(category) {
 
     // Add active class to the clicked button
     var activeButton = document.querySelector('.btn[onclick="filterPublications(\'' + category + '\')"]');
-    activeButton.classList.add('active');
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
 
     // Show/Hide publications based on the selected category with fade animation
     var items = document.querySelectorAll('.publication-item');
