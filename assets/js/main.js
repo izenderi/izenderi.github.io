@@ -231,3 +231,58 @@ function fadeOut(element) {
 // Initialize to show all publications by default
 filterPublications('all');
 
+(function updateAutoStatistics() {
+    var pubList = document.getElementById('publications-list');
+    var papersEl = document.getElementById('stat-count-papers');
+    var teamsEl = document.getElementById('stat-count-teams');
+    var memberContent = document.getElementById('reviewer-member-content');
+
+    if (pubList && papersEl) {
+        papersEl.textContent = String(pubList.querySelectorAll('li.publication-item').length);
+    }
+
+    if (memberContent && teamsEl) {
+        var dots = memberContent.textContent.match(/\u00B7/g);
+        teamsEl.textContent = String(dots ? dots.length : 0);
+    }
+})();
+
+(function () {
+    var list = document.getElementById('news-list');
+    var footer = document.getElementById('news-more-footer');
+    var btn = document.getElementById('news-more-btn');
+    if (!list || !footer || !btn) {
+        return;
+    }
+
+    var items = list.querySelectorAll(':scope > li');
+    var maxVisible = 5;
+    if (items.length <= maxVisible) {
+        return;
+    }
+
+    for (var i = maxVisible; i < items.length; i++) {
+        items[i].classList.add('news-item-extra');
+    }
+
+    footer.hidden = false;
+
+    function toggleNewsExpanded(e) {
+        if (e) {
+            e.preventDefault();
+        }
+        var expanded = list.classList.toggle('is-expanded');
+        btn.textContent = expanded ? 'Show less' : 'More news';
+        btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    }
+
+    btn.addEventListener('click', toggleNewsExpanded);
+
+    btn.addEventListener('keydown', function (e) {
+        if (e.key === ' ' || e.key === 'Spacebar') {
+            e.preventDefault();
+            toggleNewsExpanded();
+        }
+    });
+})();
+

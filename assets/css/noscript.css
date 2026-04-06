@@ -17,3 +17,12 @@ body.is-preload #header.alt .logo {
     -ms-transform: none;
     transform: none;
 }
+
+/* News: show full list when scripts are disabled */
+#news-list li.news-item-extra {
+    display: list-item !important;
+}
+
+#news-more-footer {
+    display: none !important;
+}

@@ -4467,6 +4467,14 @@ section#news.main.special{
     padding-bottom: 1em;
 }
 
+#news-list li.news-item-extra {
+    display: none;
+}
+
+#news-list.is-expanded li.news-item-extra {
+    display: list-item;
+}
+
 section#research.main.special{
     padding-top: 1em;
     padding-bottom: 1em;
@@ -4480,6 +4488,23 @@ section#working.main.special {
 section#stats.main.special{
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+/* Stats tiles 1–2: body-colored text, then a step toward white for tiles 3–5 */
+#stats .statistics li.style1 {
+    color: #636363;
+}
+
+#stats .statistics li.style1 .icon:before {
+    color: #636363;
+}
+
+#stats .statistics li.style2 {
+    color: #666666;
+}
+
+#stats .statistics li.style2 .icon:before {
+    color: #666666;
 }
 
 /***********************************************************/
